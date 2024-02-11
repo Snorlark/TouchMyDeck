@@ -1,2 +1,2 @@
-# TouchMyDeck
-A collaboration Android application project for our subject: Application Development, using Android Studio. This is a sorting game where the participants are presented with a set of cards that need to be organized systematically based on specific criteria. 
+# Test Branch
+Lagay niyo codes niyo dito, if 'di mapagana git push
