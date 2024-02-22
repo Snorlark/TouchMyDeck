@@ -7,8 +7,11 @@ GameProtoype Versions
 
   
 **Version 0.3**:
-- With home page (leaderboards, home, settings fragments)
-- Improved card view (may nextcard image view)
+- With Home page (leaderboards, home, settings fragments)
+- Improved card view (may next card image view)
 - Improved wrong input (card shakes when wrong)
+- Some assets have been implemented
+- Can now use GIF
+- Finalized Splash Screen
 
 
