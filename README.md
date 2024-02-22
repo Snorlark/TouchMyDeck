@@ -1,5 +1,5 @@
 # Test Branch
-Lagay niyo codes niyo dito, if 'di mapagana git push
+GameProtoype Versions
 
 **Version 0.2**:
 - Login, Signup, and Leaderboards are connected to the firebase
