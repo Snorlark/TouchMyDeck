@@ -13,5 +13,5 @@ GameProtoype Versions
 - Some assets have been implemented
 - Can now use GIF
 - Finalized Splash Screen
-
+- Not connected to the database yet
 
