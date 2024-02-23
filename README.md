@@ -5,6 +5,9 @@ GameProtoype Versions
 - Login, Signup, and Leaderboards are connected to the firebase
 - When the countdown begins and the game timer ends, you can't press any button.
 
+**Version 0.2.5**:
+- Minor updates on the Leaderboards
+- Fixed the "Try Again" button bug
   
 **Version 0.3**:
 - With Home page (leaderboards, home, settings fragments)
