@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#7F000C"
+    tools:context=".HomePage">
+
+    <ImageView
+        android:id="@+id/img_backCurt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/curt_b" />
+
+    <ImageView
+        android:id="@+id/img_leftCurt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/curt_l" />
+
+    <ImageView
+        android:id="@+id/img_rightCurt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:scaleX="-1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/curt_l" />
+
+    <ImageView
+        android:id="@+id/img_topCurt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/curt_t" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35"
+        app:srcCompat="@drawable/jacklogoreal" />
+
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/myImage"-->
+    <!--        android:layout_width="230dp"-->
+    <!--        android:layout_height="278dp"-->
+    <!--        android:layout_marginStart="89dp"-->
+    <!--        android:layout_marginTop="382dp"-->
+    <!--        android:layout_marginBottom="68dp"-->
+    <!--        android:src="@drawable/playbutton" />-->
+
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/amyImage"-->
+    <!--        android:layout_width="320dp"-->
+    <!--        android:layout_height="490dp"-->
+    <!--        android:layout_marginStart="48dp"-->
+    <!--        android:layout_marginTop="50dp"-->
+    <!--        android:layout_marginBottom="68dp"-->
+    <!--        android:src="@drawable/jacklogoreal" />-->
+
+
+    <ImageView
+        android:id="@+id/playButton"
+        android:layout_width="180dp"
+        android:layout_height="82dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/playbutton"
+        android:text="Play Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.78" />
+
+    <ImageView
+        android:id="@+id/tutorialButton"
+        android:layout_width="53dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/instructbutton" />
+
+    <ImageView
+        android:id="@+id/home_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/homebutton"
+        app:layout_constraintBottom_toBottomOf="@+id/img_leftCurt"
+        app:layout_constraintEnd_toEndOf="@+id/img_leftCurt"
+        app:layout_constraintStart_toStartOf="@+id/img_leftCurt"
+        app:layout_constraintTop_toBottomOf="@+id/playButton" />
+
+    <ImageView
+        android:id="@+id/leaderboards_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/leadboardbutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/home_button"
+        app:layout_constraintStart_toStartOf="@+id/img_leftCurt"
+        app:layout_constraintTop_toBottomOf="@+id/playButton" />
+
+    <ImageView
+        android:id="@+id/settings_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/settingbutton"
+        app:layout_constraintBottom_toBottomOf="@+id/img_leftCurt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/home_button"
+        app:layout_constraintTop_toBottomOf="@+id/playButton" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        style="@style/BottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

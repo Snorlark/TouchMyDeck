@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7F000C"
+    tools:context=".PostGamePage">
+
+
+    <ImageView
+        android:id="@+id/img_backCurt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/curt_b" />
+
+    <ImageView
+        android:id="@+id/img_leftCurt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/curt_l" />
+
+    <ImageView
+        android:id="@+id/img_rightCurt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:scaleX="-1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/curt_l" />
+
+    <ImageView
+        android:id="@+id/img_topCurt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/curt_t" />
+
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/myImage"-->
+    <!--        android:layout_width="230dp"-->
+    <!--        android:layout_height="278dp"-->
+    <!--        android:layout_marginStart="89dp"-->
+    <!--        android:layout_marginTop="382dp"-->
+    <!--        android:layout_marginBottom="68dp"-->
+    <!--        android:src="@drawable/playbutton" />-->
+
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/amyImage"-->
+    <!--        android:layout_width="320dp"-->
+    <!--        android:layout_height="490dp"-->
+    <!--        android:layout_marginStart="48dp"-->
+    <!--        android:layout_marginTop="50dp"-->
+    <!--        android:layout_marginBottom="68dp"-->
+    <!--        android:src="@drawable/jacklogoreal" />-->
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="420dp"
+        android:layout_height="333dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="170dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/scoreborder" />
+
+    <ImageView
+        android:id="@+id/playButton"
+        android:layout_width="218dp"
+        android:layout_height="112dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/playbutton"
+        android:text="Play Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.78" />
+
+    <ImageView
+        android:id="@+id/space"
+        android:layout_width="22dp"
+        android:layout_height="86dp"
+        android:alpha="0"
+        android:scaleType="centerCrop"
+        android:src="@drawable/homebutton"
+        app:layout_constraintBottom_toBottomOf="@+id/img_leftCurt"
+        app:layout_constraintEnd_toEndOf="@+id/img_leftCurt"
+        app:layout_constraintStart_toStartOf="@+id/img_leftCurt"
+        app:layout_constraintTop_toBottomOf="@+id/playButton" />
+
+    <ImageView
+        android:id="@+id/leaderboards_button"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/leadboardbutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/space"
+        app:layout_constraintStart_toStartOf="@+id/img_leftCurt"
+        app:layout_constraintTop_toBottomOf="@+id/playButton" />
+
+    <ImageView
+        android:id="@+id/exit_button"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/exitbutton"
+        app:layout_constraintBottom_toBottomOf="@+id/img_leftCurt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/space"
+        app:layout_constraintTop_toBottomOf="@+id/playButton" />
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="150dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="408dp"
+        android:fontFamily="@font/tmd_bold"
+        android:text="000"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="119dp"
+        android:fontFamily="@font/tmd_regular"
+        android:text="YOUR SCORE"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/confetti"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/confetti"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

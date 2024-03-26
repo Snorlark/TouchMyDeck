@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/curt_b"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/header" />
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/table"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="400dp"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        app:srcCompat = "@drawable/joker"/>-->
+
+    <!-- Score TextView -->
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/tmd_bold"
+        android:text="00"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="35dp"
+        android:fontFamily="@font/tmd_regular"
+        android:text="Score"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <!-- Timer TextView -->
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/tmd_bold"
+        android:text="30"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/tmd_regular"
+        android:text="Time"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+    <!-- For next card viewing sana, bali nasa ilalim ng current card e2 -->
+
+
+    <ImageView
+        android:id="@+id/chip1"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/chip" />
+
+    <ImageView
+        android:id="@+id/chip2"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="48dp"
+        app:srcCompat="@drawable/chip" />
+
+    <ImageView
+        android:id="@+id/chip3"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="48dp"
+        app:srcCompat="@drawable/chip" />
+
+    <ImageView
+        android:id="@+id/table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/table" />
+
+    <ImageView
+        android:id="@+id/nextCardImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/card_j" />
+
+
+    <!-- Displayed card -->
+    <ImageView
+        android:id="@+id/cardImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/card_j" />
+
+    <!-- Joker button -->
+    <ImageView
+        android:id="@+id/jokerButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/header"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="350dp"
+        android:src="@drawable/game_button1" />
+
+    <ImageView
+        android:id="@+id/pokerButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/header"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="350dp"
+        android:src="@drawable/game_button2" />
+
+
+    <ImageView
+        android:id="@+id/curtain_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/curt_l" />
+
+    <ImageView
+        android:id="@+id/curtain_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleX="-1"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/curt_l" />
+
+    <ImageView
+        android:id="@+id/curtain_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/curt_t" />
+
+    <TextView
+        android:id="@+id/countdown_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/tmd_bold"
+        android:textSize="100sp"
+        android:textColor="@color/white"
+        android:text="3" />
+
+
+    <!--    Wag muna galawin ang mga kamay ni satanas-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/hand_poker"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginStart="500dp"-->
+    <!--        android:layout_marginBottom="150dp"-->
+    <!--        android:adjustViewBounds="true"-->
+    <!--        app:srcCompat="@drawable/hand" />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/hand_joker"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginStart="-300dp"-->
+    <!--        android:layout_marginBottom="150dp"-->
+    <!--        android:scaleX="-1"-->
+    <!--        android:adjustViewBounds="true"-->
+    <!--        app:srcCompat="@drawable/hand" />-->
+
+
+</RelativeLayout>

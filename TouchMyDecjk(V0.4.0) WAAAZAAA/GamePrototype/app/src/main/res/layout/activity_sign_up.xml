@@ -1,0 +1,97 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/curt_b"
+    tools:context=".HomeLogActivity">
+
+    <ImageView
+        android:id="@+id/textbox3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="100dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/textbox3" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/tmd_regular"
+        android:hint="NU Email"
+        android:inputType="textEmailAddress"
+        android:textSize="14sp"
+
+        android:minHeight="48dp"
+
+        android:textColorHint="#888888"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNewUsername"
+        app:layout_constraintEnd_toEndOf="@id/textbox3"
+        app:layout_constraintStart_toStartOf="@id/textbox3" />
+
+    <EditText
+        android:id="@+id/editTextNewUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:fontFamily="@font/tmd_regular"
+        android:hint="Username"
+        android:inputType="text"
+        android:textSize="14sp"
+        android:minHeight="48dp"
+        android:textColorHint="#888888"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/textbox3"
+        app:layout_constraintStart_toStartOf="@id/textbox3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+    <EditText
+        android:id="@+id/editTextNewPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:fontFamily="@font/tmd_regular"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        android:minHeight="48dp"
+        android:textColorHint="#888888"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSignUp"
+        app:layout_constraintEnd_toEndOf="@id/textbox3"
+        app:layout_constraintStart_toStartOf="@id/textbox3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNewUsername" />
+
+    <ImageView
+        android:id="@+id/buttonSignUp"
+        android:layout_width="97dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="64dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@id/textbox3"
+        app:layout_constraintEnd_toEndOf="@+id/textbox3"
+        app:layout_constraintStart_toStartOf="@+id/textbox3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNewPassword"
+        app:srcCompat="@drawable/signupbutton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

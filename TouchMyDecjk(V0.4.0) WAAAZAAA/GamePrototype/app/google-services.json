@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "799004416682",
+    "project_id": "gameprototype-2ffab",
+    "storage_bucket": "gameprototype-2ffab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:799004416682:android:d1139481f41454697c4ed3",
+        "android_client_info": {
+          "package_name": "com.babao.gameprototype"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCr4opvLbMznY8Ou4DSmwd5czSvFPqrQ2o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
